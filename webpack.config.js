@@ -11,7 +11,7 @@ module.exports = {
    * Without this, webpack-dev-server does not work with .browserslistrc file
    */
   target: 'web',
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
