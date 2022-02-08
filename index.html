@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=css-tricks.com" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="https://www.google.com/s2/favicons?domain=css-tricks.com"
+      type="image/png"
+    />
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/1f43dcf19f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1f43dcf19f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-
     <!-- Container -->
-    <div class="quote-container" id="quote-container">
-      
+    <div class="quote-container" id="quote-container" hidden>
       <!-- Quote text -->
       <div class="quote-text">
         <i class="fas fa-quote-left"></i>
-        <span id="text">What you are is what you have been and What you become is what you do now.</span>
-        <i class="fas fa-quote-right"></i>
+        <span id="text"></span>
+        <!-- <i class="fas fa-quote-right"></i> -->
       </div>
 
       <!-- Quote Author -->
       <div class="quote-author">
-        <span id="author">Buddha</span>
+        <span id="author"></span>
       </div>
 
       <!-- Buttons -->
@@ -30,12 +35,15 @@
         <button class="twitter-button" id="twitter" title="Tweet this">
           <i class="fab fa-twitter" title="Tweet this"></i>
         </button>
-        <button id="new-quote" >
-          New Quote
-        </button>
+        <button id="new-quote">New Quote</button>
       </div>
-
-
     </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <h2 id="error" hidden>
+      Max retry limit reached for fetching data. Contact site maintainers.
+    </h2>
   </body>
 </html>
